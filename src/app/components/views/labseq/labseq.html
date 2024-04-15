@@ -1,0 +1,12 @@
+<mat-card class="home mat-elevation-z4">
+    <mat-card-title class="title">Bem vindo a {{title}}!</mat-card-title>
+    <mat-card-subtitle class="subtitle">Sistema para exemplificar o LabSeq </mat-card-subtitle>
+</mat-card>
+
+<mat-card class="home mat-elevation-z4">
+    <div>
+        <input type="number" [(ngModel)]="input">
+        <button (click)="calculateLabSeq()">Calcular</button>
+        <div *ngIf="result !== undefined">Resultado: {{ result }}</div>
+    </div>
+</mat-card>

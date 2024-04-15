@@ -1,0 +1,6 @@
+<h1>Welcome to {{title}}!</h1>
+<div>
+    <input type="number" [(ngModel)]="input">
+    <button (click)="calculateLabSeq()">Calculate</button>
+    <div *ngIf="result !== undefined">Result: {{ result }}</div>
+</div>
